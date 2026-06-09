@@ -201,8 +201,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Typewriter Effect
     const message = [
         "I love you so much...",
-        "More than the stars you just saw.",
-        "Because even the stars on the sky",
+        "More than the stars on the sky.",
+        "Because even the stars have a limit...",
         "But my love for you doesn't.",
         "Every day with you becomes my favorite day.",
         "Thank you for being in my life ❤️"
