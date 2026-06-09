@@ -177,10 +177,8 @@ main#app {
 
 /* Scene 4: Button & Modal */
 .final-btn {
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 20px;
     padding: 12px 24px;
     border: none;
     border-radius: 30px;
@@ -192,7 +190,6 @@ main#app {
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(255, 154, 158, 0.4);
     transition: all 0.3s ease;
-    z-index: 10;
     opacity: 0;
     pointer-events: none;
 }
@@ -207,17 +204,17 @@ main#app {
 
     0%,
     100% {
-        transform: translate(-50%, 0);
+        transform: translateY(0);
     }
 
     50% {
-        transform: translate(-50%, -8px);
+        transform: translateY(-8px);
     }
 }
 
 .final-btn:hover {
     box-shadow: 0 12px 25px rgba(255, 154, 158, 0.6);
-    transform: translate(-50%, -2px) scale(1.05);
+    transform: translateY(-2px) scale(1.05);
 }
 
 .modal {
