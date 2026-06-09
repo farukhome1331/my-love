@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A Special Message For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background Canvas for Particles -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Music Button -->
+    <button id="musicBtn" class="music-btn" aria-label="Play Music">🎵</button>
+    <audio id="bgMusic" loop preload="auto">
+        <!-- Add your audio file here -->
+        <source src="audio/love-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Main Container -->
+    <main id="app">
+
+        <!-- Scene 1: Intro -->
+        <section id="scene1" class="scene active">
+            <div id="introContainer" class="intro-container glass-card">
+                <p class="intro-text">Do you wanna know something?????</p>
+                <button id="clickHereBtn" class="action-btn">Click here ❤️</button>
+            </div>
+        </section>
+
+        <!-- Scene 3: Message Reveal -->
+        <section id="scene3" class="scene">
+            <div class="glass-card">
+                <div id="typewriterText" class="typewriter-text"></div>
+            </div>
+        </section>
+
+        <!-- Scene 4 Transition Button -->
+        <button id="finalBtn" class="final-btn hidden">❤️ One More Thing</button>
+
+        <!-- Final Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content modal-card">
+                <button id="closeModal" class="close-btn">&times;</button>
+                <div class="heart-animation">❤️</div>
+                <p class="modal-text">No matter how many stars fill the sky,<br>my favorite view will always be you.</p>
+                <div class="photo-container">
+                    <!-- Placeholder image -->
+                    <img src="images/our-photo.jpeg" alt="Our Photo" class="our-photo">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
